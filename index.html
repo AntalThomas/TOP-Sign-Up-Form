@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="leftside">
+        <div class="logo">
+            <img width="100%" src="./images/odinlogo.png" alt="TOP Logo">
+        </div>
+
+        <p>Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on Unsplash</p>
+    </div>
+
+    <div class="rightside">
+
+        <div class="top">
+            <p class="text">
+                This is not a real online service! You know you need something like this in your life to help you realize your
+                deepest dreams. Sign up <em>now</em> to get started. 
+                <br><br>You know you want to.<br><br>
+            </p>
+        </div>
+
+        <div class="middle">
+            <h1>Let's do this!</h1>
+
+            <form action method="get" class="signupform">
+                <div class="column1">
+                    <div class="form-row">
+                        <label for="firstname">FIRST NAME</label>
+                        <input id="firstname" name="firstname" type="text" placeholder="John" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="lastname">LAST NAME</label>
+                        <input id="lastname" name="lastname" type="text" placeholder="Smith" required>
+                    </div>
+                </div>
+
+                <div class=column2>
+                    <div class="form-row">
+                        <label for="email">EMAIL</label>
+                        <input id="email" name="email" type="email" placeholder="John.Smith@gmail.com" pattern="^([\w\.-_]+)@([\w-]+)\.([a-zA-Z]{2,5})([\.][a-zA-Z]{2,5})?$" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phonenumber">PHONE NUMBER</label>
+                        <input id="phonenumber" name="phonenumber" type="text" placeholder="0433322232" pattern="^(?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$">
+                    </div>
+                </div>
+
+                <div class="column3">
+                    <div class="form-row">
+                        <label for="password">PASSWORD</label>
+                        <input id="password" name="password" type="password" placeholder="********" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="confirmpassword">CONFIRM PASSWORD</label>
+                        <input id="confirmpassword" name="confirmpassword" type="password" placeholder="********" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="bottom">
+            <div class="createaccount">
+                <button type="submit" form="sign-up" onclick="myFunction()">Create Account</button>
+                <script>
+                    function myFunction() {
+                        window.location.href="https://github.com/AntalThomas/TOP-Sign-Up-Form";
+                    }
+                </script>
+            </div>
+            <p>
+                Already have an account?
+                <a href="https://github.com/AntalThomas/TOP-Sign-Up-Form" target="https://github.com/AntalThomas/TOP-Sign-Up-Form">Log in</a> 
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

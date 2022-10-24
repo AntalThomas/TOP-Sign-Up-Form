@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+  
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gosha', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("./images/greenleaf.avif");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 35%;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    margin-top: 30vh;
+}
+
+.leftside > p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.credits {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    color: white;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 65%;
+    background-color:rgb(236, 236, 236);
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bold;
+    color: black
+}
+
+.signupform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-x: hidden;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-row input {
+    border: 2.5px solid lightgray;
+    border-radius: 12px;
+    padding: 12px;
+    height: 40px;
+    width: 400px;
+    position: relative;
+    font-size: 15px;
+}
+
+.column1 {
+    display: flex;
+    gap: 100px;
+}
+
+.column2 {
+    display: flex;
+    gap: 100px;
+}
+
+.column3 {
+    display: flex;
+    gap: 100px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.top, .middle, .bottom {
+    padding: 40px 40px 40px 40px;
+}
+
+.top {
+    padding-top: 200px;
+    padding-right: 350px;
+}
+
+.middle {
+    background-color: white;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+button {
+    padding: 20px 25px;
+    font-size: large;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 5px 10px lightgray;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    cursor: grab;
+    transform: translateY(1px);
+}
+
+.bottom > p {
+    padding-top: 100px;
+}
